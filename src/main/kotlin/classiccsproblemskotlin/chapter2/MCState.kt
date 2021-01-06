@@ -26,7 +26,7 @@ data class MCState(val wm: Int, val wc: Int, val em: Int, val ec: Int, val boat:
         const val MAX_NUM = 3
     }
 
-    fun succesors(): Sequence<MCState> {
+    fun successors(): Sequence<MCState> {
         val sucs = mutableListOf<MCState>()
         if (boat) { // boat on west bank
             if (wm > 1) sucs.add(MCState(wm - 2, wc, !boat))

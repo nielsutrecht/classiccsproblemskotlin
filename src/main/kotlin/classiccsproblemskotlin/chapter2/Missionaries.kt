@@ -2,7 +2,7 @@ package classiccsproblemskotlin.chapter2
 
 fun main() {
     val start = MCState(MCState.MAX_NUM, MCState.MAX_NUM, true)
-    val solution = bfs(start, MCState::goalTest, MCState::succesors)
+    val solution = bfs(start, MCState::goalTest, MCState::successors)
 
     if(solution == null) {
         println("No solution found!")
